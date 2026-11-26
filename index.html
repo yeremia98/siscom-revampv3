@@ -55,9 +55,29 @@
           <span class="nav-ink" aria-hidden="true"></span>
           <a href="#solusi">Solusi</a>
           <a href="#hisis">HISIS</a>
-          <a href="#produk">Produk</a>
+          <div class="nav-drop">
+            <button
+              class="nav-drop-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="productMenu"
+            >
+              Produk
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            <div class="nav-drop-panel" id="productMenu">
+              <a href="product.html"><i class="d1"></i><span><b>SIS SmartPOS</b><small>Program POS &amp; Stock Control</small></span></a>
+              <a href="product.html"><i class="d2"></i><span><b>SIS Distribution Suite</b><small>Software Distribusi Terintegrasi</small></span></a>
+              <a href="product.html"><i class="d3"></i><span><b>SIS Manufacturing Suite</b><small>ERP Industri Manufaktur</small></span></a>
+              <a href="product.html"><i class="d4"></i><span><b>SIS Construction One</b><small>ERP Untuk Bidang Konstruksi</small></span></a>
+              <a href="product.html"><i class="d2"></i><span><b>SIS PusatBerikat</b><small>ERP IT Kawasan Berikat</small></span></a>
+              <a href="product.html"><i class="d3"></i><span><b>SIS ForexSuite</b><small>Aplikasi Valas Bank Indonesia</small></span></a>
+              <a href="product.html"><i class="d4"></i><span><b>SIS CoreHR</b><small>ERP Pengelolaan SDM</small></span></a>
+            </div>
+          </div>
           <a href="#klien">Klien</a>
-          <a href="#faq">FAQ</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
         </nav>
 
         <div class="nav-actions">
@@ -100,7 +120,8 @@
         <a href="#produk">Produk</a>
         <a href="#proses">Implementasi</a>
         <a href="#klien">Klien</a>
-        <a href="#faq">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
       </nav>
       <a class="btn btn-a drawer-cta" href="demo.html"
         >Jadwalkan Demo 30 Menit</a
@@ -117,6 +138,7 @@
         <div class="hero-glow" aria-hidden="true"></div>
         <div class="wrap hero-grid">
           <div class="hero-copy">
+            <p class="eyebrow"><i></i>SISCOM ERP · Sejak 1994</p>
             <h1>
               Stok, kas, dan laporan Anda memakai
               <span class="grad-text">angka yang sama.</span>
@@ -234,6 +256,7 @@
         <div class="story-sticky">
           <div class="wrap story-grid">
             <div class="story-copy">
+              <p class="eyebrow"><i></i>Dari data ke keputusan</p>
               <div class="story-slides">
                 <article class="story-slide is-active" data-step="0">
                   <h2 class="big">
@@ -280,7 +303,10 @@
               <div class="vis vis-a is-active" aria-hidden="true">
                 <div class="orbit-rings"><i></i><i></i><i></i></div>
                 <div class="orbit-stage">
-                  <div class="orbit-globe"><canvas id="orbA"></canvas></div>
+                  <div class="orbit-globe">
+                    <canvas id="orbA"></canvas>
+                    <img class="orb-mark" src="assets/img/sis-mark.png" alt="" />
+                  </div>
                   <svg
                     class="orbit-lines"
                     viewBox="0 0 100 100"
@@ -317,7 +343,10 @@
 
               <div class="vis vis-b" aria-hidden="true">
                 <div class="sys-wrap">
-                  <div class="sys-sphere"><canvas id="orbB"></canvas></div>
+                  <div class="sys-sphere">
+                    <canvas id="orbB"></canvas>
+                    <img class="orb-mark" src="assets/img/sis-mark.png" alt="" />
+                  </div>
                   <svg
                     class="sys-lines"
                     viewBox="0 0 470 540"
@@ -406,6 +435,7 @@
       <section class="hisis" id="hisis">
         <div class="wrap">
           <div class="sec-head center">
+            <p class="eyebrow"><i></i>HISIS by SISCOM</p>
             <h2 class="grad-title">
               HISIS by SISCOM<br />untuk Produktivitas Maksimal.
             </h2>
@@ -528,6 +558,7 @@
           <div class="wrap dom-inner">
             <div class="dom-intro">
               <div class="sec-head center">
+                <p class="eyebrow"><i></i>Produk</p>
                 <h2 class="grad-title">
                   Pilih suite yang dibuat<br />untuk model bisnis Anda.
                 </h2>
@@ -587,6 +618,7 @@
       <section class="process" id="proses">
         <div class="wrap">
           <div class="sec-head rv">
+            <p class="eyebrow"><i></i>Implementasi</p>
             <h2>Bertahap sampai tim Anda mandiri.</h2>
             <p class="lead">
               Konsultan SISCOM mendampingi dari persiapan data hingga pelatihan
@@ -627,7 +659,7 @@
       <section class="history" id="sejarah">
         <div class="wrap">
           <div class="sec-head center rv">
-            <!-- <p class="eyebrow"><i></i>Perjalanan Kami</p> -->
+            <p class="eyebrow"><i></i>Perjalanan Kami</p>
             <h2>Timeline <span class="grad-text">History</span></h2>
             <p class="lead center">
               Dari kantor kecil pada 1994 menjadi platform ERP yang dipercaya
@@ -735,6 +767,7 @@
       <section class="secure" id="keamanan">
         <div class="wrap">
           <div class="sec-head rv">
+            <p class="eyebrow light"><i></i>Keamanan</p>
             <h2>Akses terkontrol, dukungan jelas penanggung jawabnya.</h2>
           </div>
           <div class="sec-grid">
@@ -774,21 +807,39 @@
       <section class="clients" id="klien">
         <div class="wrap">
           <div class="sec-head center rv">
-            <h2>Lebih dari 1.000 perusahaan mempercayakan operasionalnya.</h2>
+            <p class="eyebrow"><i></i>Klien</p>
+            <h2>
+              Lebih dari 1.000 perusahaan di Indonesia mempercayakan
+              operasionalnya kepada SISCOM ERP.
+            </h2>
             <p class="lead center">
-              Contoh klien tercatat di siscom.co.id. ISI: ganti dengan logo
-              resmi setelah izin tayang.
+              Dari retail, manufaktur, konstruksi, hingga jasa — mereka menjalankan
+              bisnis dengan satu sistem yang sama.
             </p>
           </div>
-          <div class="client-grid rv">
-            <div>Hwaseung</div>
-            <div>Indoprima</div>
-            <div>Denka</div>
-            <div>Kawata</div>
-            <div>Bakpau A Satu</div>
-            <div>Bio Herbal</div>
-            <div>Aneka Logam</div>
-            <div>Beyond Tech</div>
+          <div class="client-marquee rv" aria-label="Perusahaan yang mempercayakan operasionalnya kepada SISCOM">
+            <div class="client-track">
+              <div class="client-set">
+                <span class="client-logo">Hwaseung</span>
+                <span class="client-logo alt">Indoprima</span>
+                <span class="client-logo">Denka</span>
+                <span class="client-logo alt">Kawata</span>
+                <span class="client-logo">Bakpau A Satu</span>
+                <span class="client-logo alt">Bio Herbal</span>
+                <span class="client-logo">Aneka Logam</span>
+                <span class="client-logo alt">Beyond Tech</span>
+              </div>
+              <div class="client-set" aria-hidden="true">
+                <span class="client-logo">Hwaseung</span>
+                <span class="client-logo alt">Indoprima</span>
+                <span class="client-logo">Denka</span>
+                <span class="client-logo alt">Kawata</span>
+                <span class="client-logo">Bakpau A Satu</span>
+                <span class="client-logo alt">Bio Herbal</span>
+                <span class="client-logo">Aneka Logam</span>
+                <span class="client-logo alt">Beyond Tech</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -797,6 +848,7 @@
       <section class="faq-sec" id="faq">
         <div class="wrap faq-grid">
           <div class="sec-head rv">
+            <p class="eyebrow"><i></i>FAQ</p>
             <h2>Pertanyaan sebelum demo.</h2>
             <p class="lead">
               Belum menemukan jawabannya? Tanyakan langsung ke konsultan kami.

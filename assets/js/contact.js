@@ -85,16 +85,35 @@ if (form)
     e.preventDefault();
     let ok = true;
     $$(".f", form).forEach((f) => {
-      const input = $("input,select", f);
-      const v = input.value.trim();
-      let good = !!v;
-      if (input.name === "wa") good = v.replace(/\D/g, "").length >= 9;
+      const input = $("input,select,textarea", f);
+      if (!input) return;
+      let good = true;
+      if (input.type === "checkbox")
+        good = $$("input[name=produk]:checked", form).length > 0;
+      else good = !!input.value.trim();
+      if (input.type === "email")
+        good = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
+      if (input.type === "tel")
+        good = input.value.replace(/\D/g, "").length >= 9;
       f.classList.toggle("bad", !good);
       if (!good) ok = false;
     });
-    if (!ok) return $(".bad input,.bad select", form).focus();
+    const verify = $("#ver");
+    if (verify) {
+      const row = verify.closest(".verify-row");
+      if (row) row.classList.toggle("bad", !verify.checked);
+      if (!verify.checked) ok = false;
+    }
+    if (!ok) {
+      const bad = $(".bad input,.bad select,.bad textarea", form);
+      if (bad) bad.focus();
+      return;
+    }
     const d = Object.fromEntries(new FormData(form));
-    const msg = `Halo Tim SISCOM, saya ingin menjadwalkan demo ERP 30 menit.\nNama: ${d.nama}\nPerusahaan: ${d.perusahaan}\nWhatsApp: ${d.wa}\nSektor: ${d.industri}`;
+    const produk = $$("input[name=produk]:checked", form)
+      .map((x) => x.value)
+      .join(", ");
+    const msg = `Halo Tim SISCOM, saya ingin menjadwalkan demo ERP.\nProduk: ${produk}\nTanggal: ${d.tanggal}\nJam: ${d.jam} WIB\nNama: ${d.nama}\nEmail: ${d.email}\nWhatsApp: ${d.wa}\nPerusahaan: ${d.perusahaan}\nJabatan: ${d.jabatan}\nCatatan: ${d.catatan || "-"}`;
     $("#st").textContent =
       "Permintaan siap dikirim. Jika WhatsApp tidak terbuka, klik tombol Chat WhatsApp.";
     open(waUrl(msg), "_blank", "noopener");

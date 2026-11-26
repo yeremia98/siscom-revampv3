@@ -3426,6 +3426,79 @@ section[id] {
   }
 }
 
+/* Marquee logo klien (ala SaaSez) */
+.client-marquee {
+  position: relative;
+  margin-top: clamp(28px, 4vw, 48px);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+}
+.client-track {
+  display: flex;
+  width: max-content;
+  animation: clientScroll 34s linear infinite;
+}
+.client-marquee:hover .client-track {
+  animation-play-state: paused;
+}
+.client-marquee + .client-marquee {
+  margin-top: 14px;
+}
+.client-marquee.row-right .client-track {
+  animation-direction: reverse;
+}
+.client-set {
+  display: flex;
+  align-items: center;
+  gap: clamp(36px, 5vw, 76px);
+  padding-right: clamp(36px, 5vw, 76px);
+}
+.client-logo {
+  display: grid;
+  place-items: center;
+  min-width: 150px;
+  height: 52px;
+  font-family: var(--display);
+  font-size: 1.12rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  white-space: nowrap;
+  opacity: 0.72;
+  transition: opacity 0.3s;
+}
+.client-logo.alt {
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.6;
+}
+.client-logo:hover {
+  opacity: 1;
+}
+@keyframes clientScroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .client-track {
+    animation: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -5768,4 +5841,158 @@ section[id] {
 /* Jarak garis dari permukaan bola dijaga JS; ini hanya gaya visualnya. */
 .sys-lines .sys-path path {
   stroke-dasharray: none;
+}
+
+/* Dropdown produk di navbar (ala Kivo) */
+.nav-drop {
+  position: relative;
+}
+.nav-drop-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #464a51;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.25s;
+}
+.nav-drop-btn:hover,
+.nav-drop.open .nav-drop-btn {
+  color: var(--orange-2);
+}
+.nav-drop-btn svg {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.25s var(--ease);
+}
+.nav-drop.open .nav-drop-btn svg {
+  transform: rotate(180deg);
+}
+.nav-drop-panel {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  z-index: 80;
+  width: min(560px, calc(100vw - 32px));
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  border: 1px solid rgba(20, 20, 20, 0.06);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow:
+    0 30px 60px -28px rgba(10, 20, 50, 0.32),
+    0 2px 6px rgba(10, 20, 50, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -10px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.35s var(--ease),
+    visibility 0.25s;
+}
+.nav-drop.open .nav-drop-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+.nav-drop-panel a {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 12px 13px;
+  border-radius: 13px;
+  transition: background 0.2s;
+}
+.nav-drop-panel a:hover {
+  background: #f4f1eb;
+}
+.nav-drop-panel i {
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: #8a8a8f;
+}
+.nav-drop-panel i.d1 { background: #e2541a; }
+.nav-drop-panel i.d2 { background: #8a8a8f; }
+.nav-drop-panel i.d3 { background: #c9c9cf; }
+.nav-drop-panel i.d4 { background: #1e1e1e; }
+.nav-drop-panel b {
+  display: block;
+  font-family: var(--text);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #2b2f36;
+}
+.nav-drop-panel small {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.76rem;
+  color: #8b8f97;
+}
+/* Logo SISCOM di permukaan globe section cerita */
+.orb-mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 58%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.96;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.28));
+}
+@media (max-width: 960px) {
+  .nav-drop-panel {
+    display: none;
+  }
+}
+
+/* Gradasi judul tiap section: tebal di awal, agak tebal di akhir */
+:where(
+    .story-slide h2,
+    .process h2,
+    .clients h2,
+    .faq-sec h2,
+    .foot-hero h2,
+    .cta h2,
+    .history h2,
+    .p-overview h2,
+    .p-modules h2,
+    .p-features h2,
+    .p-solusi h2,
+    .p-faq h2
+  ) {
+  background: linear-gradient(102deg, #0a1222 0%, #2b3546 52%, #6f6862 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.story-slide h2 .muted {
+  background: none;
+  -webkit-text-fill-color: #4a8eeb;
+  color: #4a8eeb;
+}
+.cta h2,
+.foot-hero h2 {
+  background: linear-gradient(102deg, #fff 0%, #cfd8e6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -31,7 +31,7 @@ $$("[data-wa]").forEach((a) => {
 const head = $("#top");
 const nav = $("#nav");
 const ink = $(".nav-ink");
-const navLinks = $$("a", nav);
+const navLinks = $$("a", nav).filter((a) => !a.closest(".nav-drop"));
 let activeLink = null;
 
 function moveInk(el) {
@@ -47,6 +47,8 @@ function moveInk(el) {
 navLinks.forEach((a) => {
   a.addEventListener("pointerenter", () => moveInk(a));
 });
+const navDropBtn = $(".nav-drop-btn");
+if (navDropBtn) navDropBtn.addEventListener("pointerenter", () => moveInk(null));
 nav.addEventListener("pointerleave", () => moveInk(activeLink));
 
 const spy = ["solusi", "hisis", "produk", "klien", "faq"]
@@ -105,6 +107,27 @@ $$("a", drawer).forEach((a) =>
   a.addEventListener("click", () => setDrawer(false)),
 );
 addEventListener("keydown", (e) => e.key === "Escape" && setDrawer(false));
+
+/* Dropdown produk ------------------------------------------ */
+const navDrop = $(".nav-drop");
+if (navDrop) {
+  const dropBtn = $(".nav-drop-btn", navDrop);
+  const closeDrop = () => {
+    navDrop.classList.remove("open");
+    dropBtn.setAttribute("aria-expanded", "false");
+  };
+  dropBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const open = !navDrop.classList.contains("open");
+    navDrop.classList.toggle("open", open);
+    dropBtn.setAttribute("aria-expanded", open);
+  });
+  document.addEventListener("click", (e) => {
+    if (!navDrop.contains(e.target)) closeDrop();
+  });
+  $$("a", navDrop).forEach((a) => a.addEventListener("click", closeDrop));
+  addEventListener("keydown", (e) => e.key === "Escape" && closeDrop());
+}
 
 /* Reveal + counter ----------------------------------------- */
 const io = new IntersectionObserver(
@@ -1710,6 +1733,18 @@ if (document.fonts && document.fonts.ready)
     drawHistArc();
     historyUpdate();
   }).catch(() => {});
+
+/* Dua baris marquee klien: atas ke kiri, bawah ke kanan */
+const clientMarquee = $(".client-marquee");
+if (clientMarquee) {
+  clientMarquee.classList.add("row-left");
+  const second = clientMarquee.cloneNode(true);
+  second.classList.remove("row-left");
+  second.classList.add("row-right");
+  second.setAttribute("aria-hidden", "true");
+  second.classList.remove("rv", "in");
+  clientMarquee.after(second);
+}
 
 function boot() {
   initHero();
