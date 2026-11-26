@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Jadwalkan Demo — SISCOM ERP &amp; HRIS</title>
+    <meta
+      name="description"
+      content="Jadwalkan demo 30 menit dengan konsultan SISCOM. Lihat ERP dan HRIS bekerja pada alur retail, distribusi, manufaktur, konstruksi, kawasan berikat, valas, dan payroll."
+    />
+    <meta name="theme-color" content="#0a1f44" />
+    <link rel="canonical" href="https://siscom.co.id/demo.html" />
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/contact.js" defer></script>
+    <script src="assets/js/footerlines.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="site-head" id="top">
+      <div class="nav-shell">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="SISCOM ERP, kembali ke beranda"
+        >
+          <img src="assets/img/logo.svg" alt="" width="28" height="28" />
+          <span class="brand-word">SISCOM</span><i class="brand-dot"></i>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Utama">
+          <span class="nav-ink" aria-hidden="true"></span>
+          <a href="index.html#solusi">Solusi</a>
+          <a href="index.html#hisis">HISIS</a>
+          <a href="index.html#produk">Produk</a>
+          <a href="index.html#klien">Klien</a>
+          <a href="index.html#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn btn-a nav-cta" href="demo.html" aria-current="page">
+            <span class="cta-full">Jadwalkan Demo</span
+            ><span class="cta-short">Demo</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Buka menu"
+            aria-expanded="false"
+            aria-controls="drawer"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-top">
+        <span class="drawer-label">Menu</span>
+        <button
+          class="burger close"
+          id="close"
+          type="button"
+          aria-label="Tutup menu"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav aria-label="Menu seluler">
+        <a href="index.html#solusi">Solusi</a>
+        <a href="index.html#hisis">HISIS</a>
+        <a href="index.html#produk">Produk</a>
+        <a href="index.html#proses">Implementasi</a>
+        <a href="index.html#klien">Klien</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-a drawer-cta" href="demo.html"
+        >Jadwalkan Demo 30 Menit</a
+      >
+      <p class="drawer-note">
+        Konsultan SISCOM siap membantu, Senin–Jumat 09.00–17.00 WIB.
+      </p>
+    </div>
+
+    <main id="main">
+      <section class="contact-hero">
+        <div class="wrap">
+          <div>
+            <h1>Lihat SISCOM bekerja di alur bisnis Anda.</h1>
+            <p class="lead">
+              Satu sesi 30 menit bersama konsultan SISCOM untuk memetakan
+              kebutuhan, melihat modul yang relevan, dan menyusun langkah
+              implementasi. Tanpa komitmen pembelian.
+            </p>
+          </div>
+          <div class="contact-facts">
+            <div>
+              <span>Telepon</span>
+              <a href="tel:+622156945002">+62 21 5694 5002</a>
+            </div>
+            <div>
+              <span>Email</span>
+              <a href="mailto:marketing@siscom.co.id">marketing@siscom.co.id</a>
+            </div>
+            <div>
+              <span>Jam kerja</span>
+              <b>Senin–Jumat, 09.00–17.00 WIB</b>
+            </div>
+            <div>
+              <span>Respons</span>
+              <b>1 hari kerja</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-sec contact-sec" id="demo">
+        <div class="wrap">
+          <div class="cta rv">
+            <div class="cta-copy">
+              <h2>Ceritakan alur yang ingin Anda rapikan.</h2>
+              <p class="lead">
+                Isi data singkat di samping. Konsultan SISCOM akan menghubungi
+                lewat WhatsApp untuk menyepakati waktu demo.
+              </p>
+              <p class="cta-contact">
+                Telp
+                <a href="tel:+622156945002">+62 21 5694 5002</a><br />
+                Email
+                <a href="mailto:marketing@siscom.co.id"
+                  >marketing@siscom.co.id</a
+                >
+              </p>
+            </div>
+            <form id="demoform" novalidate>
+              <h3>Minta jadwal demo</h3>
+              <div class="f">
+                <label for="n">Nama lengkap</label>
+                <input id="n" name="nama" required autocomplete="name" />
+                <span class="err">Isi nama Anda.</span>
+              </div>
+              <div class="f">
+                <label for="p">Perusahaan</label>
+                <input
+                  id="p"
+                  name="perusahaan"
+                  required
+                  autocomplete="organization"
+                />
+                <span class="err">Isi nama perusahaan.</span>
+              </div>
+              <div class="f">
+                <label for="w">No. WhatsApp</label>
+                <input
+                  id="w"
+                  name="wa"
+                  type="tel"
+                  required
+                  autocomplete="tel"
+                />
+                <span class="err">Masukkan nomor valid (min. 9 digit).</span>
+              </div>
+              <div class="f">
+                <label for="i">Sektor</label>
+                <select id="i" name="industri" required>
+                  <option value="">Pilih sektor</option>
+                  <option>Retail / POS</option>
+                  <option>Distribusi</option>
+                  <option>Manufaktur</option>
+                  <option>Konstruksi</option>
+                  <option>Kawasan Berikat</option>
+                  <option>Money Changer</option>
+                  <option>HRIS &amp; Payroll</option>
+                </select>
+                <span class="err">Pilih sektor.</span>
+              </div>
+              <button class="btn btn-a" type="submit">
+                Kirim lewat WhatsApp
+              </button>
+              <p id="st" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="contact-steps rv">
+            <article>
+              <span>01</span>
+              <h3>Kami dengarkan dulu</h3>
+              <p>Alur kerja, jumlah cabang, dan kendala yang paling terasa.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Demo yang relevan</h3>
+              <p>Modul ditampilkan sesuai sektor, bukan presentasi umum.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Langkah berikutnya</h3>
+              <p>Estimasi modul, waktu implementasi, dan tim yang terlibat.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer ala Kivo -->
+    <footer class="foot">
+      <div class="wrap">
+        <div class="foot-hero">
+          <canvas class="foot-lines" id="footLines" aria-hidden="true"></canvas>
+          <div>
+            <p class="foot-mark">SISCOM <span>×</span> ERP</p>
+            <h2>Jadikan SISCOM bagian dari cara bisnis Anda beroperasi.</h2>
+            <p class="lead">
+              Tim Anda ingin pekerjaan selesai, bukan alat lain yang terputus.
+              SISCOM menghubungkan penjualan, persediaan, proyek, dan SDM dalam
+              satu sistem yang sudah dipercaya sejak 1994.
+            </p>
+            <div class="cta-row">
+              <a
+                class="btn btn-a"
+                data-wa="Halo Tim SISCOM, saya ingin menjadwalkan demo ERP."
+                href="#"
+                >Chat WhatsApp</a
+              >
+              <a class="btn btn-line" href="index.html">Kembali ke beranda</a>
+            </div>
+          </div>
+          <ol class="foot-steps">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Analisa kebutuhan</h3>
+                <p>Pemetaan SOP dan struktur cabang.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Setup &amp; migrasi</h3>
+                <p>Instalasi, hak akses, dan impor data awal.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Go-live &amp; dampingan</h3>
+                <p>Pelatihan onsite dan kontrak pemeliharaan.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <a class="brand" href="index.html" aria-label="SISCOM ERP">
+              <img src="assets/img/logo.svg" alt="" width="28" height="28" />
+              <span class="brand-word">SISCOM</span><i class="brand-dot"></i>
+            </a>
+            <p>
+              Software ERP &amp; HRIS Indonesia.<br />PT Shan Informasi Sistem,
+              sejak 1994.
+            </p>
+            <div class="social">
+              <a
+                href="https://www.instagram.com/siscomsoftware/"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+              <a
+                href="https://id.linkedin.com/company/pt-shan-informasi-sistem"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4>Produk</h4>
+            <a href="index.html#produk">Retail &amp; POS</a>
+            <a href="index.html#produk">Distribusi</a>
+            <a href="index.html#produk">Manufaktur</a>
+            <a href="index.html#produk">Konstruksi</a>
+            <a href="index.html#produk">Kawasan Berikat</a>
+            <a href="index.html#produk">Money Changer</a>
+            <a href="index.html#produk">HRIS</a>
+          </div>
+          <div>
+            <h4>Perusahaan</h4>
+            <a href="index.html#hisis">HISIS</a>
+            <a href="index.html#proses">Implementasi</a>
+            <a href="index.html#klien">Klien</a>
+            <a href="index.html#faq">FAQ</a>
+            <a href="https://siscom.co.id/kebijakan-privasi"
+              >Kebijakan Privasi</a
+            >
+          </div>
+          <div>
+            <h4>Kontak</h4>
+            <address>
+              City Resort Rukan Malibu Blok J No. 75-77, Mutiara Taman Palem,
+              Cengkareng Timur, Jakarta Barat 11730
+            </address>
+            <a href="mailto:cs@siscom.co.id">cs@siscom.co.id</a>
+            <a href="tel:+622156945002">+62 21 5694 5002</a>
+          </div>
+        </div>
+
+        <div class="foot-bottom">
+          <span
+            >&copy; <span id="year">2026</span> PT Shan Informasi Sistem. All
+            rights reserved.</span
+          >
+          <span>Dibuat untuk bisnis Indonesia.</span>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="wa"
+      id="wa"
+      data-wa="Halo Tim SISCOM, saya ingin bertanya tentang SISCOM ERP."
+      href="#"
+      aria-label="Chat WhatsApp"
+      ><svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-3.8-.9L3 21l1.9-5.6a8.4 8.4 0 1 1 16.1-3.9Z"
+        />
+        <path
+          d="M8.5 9.5c.4 2.7 2.3 4.6 5 5l1.2-1.7 1.8.9c-.4 1.4-1.7 2.2-3.1 1.9-3.4-.7-5.8-3.1-6.5-6.5-.3-1.4.5-2.7 1.9-3.1l.9 1.8Z"
+        /></svg
+      ><span>Chat WhatsApp</span></a
+    >
+  </body>
+</html>

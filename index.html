@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SISCOM ERP: Software ERP &amp; HRIS Indonesia Sejak 1994</title>
+    <meta
+      name="description"
+      content="Software ERP dan HRIS Indonesia dari SISCOM sejak 1994. Retail, distribusi, manufaktur, konstruksi, kawasan berikat, valas, dan payroll. Jadwalkan demo."
+    />
+    <meta name="theme-color" content="#0a1f44" />
+    <link rel="canonical" href="https://siscom.co.id/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SISCOM ERP &amp; HRIS Indonesia" />
+    <meta property="og:url" content="https://siscom.co.id/" />
+    <meta
+      property="og:image"
+      content="https://siscom.co.id/assets/img/og.svg"
+    />
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PT Shan Informasi Sistem (SISCOM)",
+        "url": "https://siscom.co.id/",
+        "foundingDate": "1994",
+        "email": "marketing@siscom.co.id",
+        "telephone": "+62-21-5694-5002",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "City Resort Rukan Malibu Blok J No. 75-77, Mutiara Taman Palem, Cengkareng Timur",
+          "addressLocality": "Jakarta Barat",
+          "postalCode": "11730",
+          "addressCountry": "ID"
+        }
+      }
+    </script>
+    <script src="assets/js/three.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/footerlines.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="site-head" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="#hero" aria-label="SISCOM ERP, kembali ke atas">
+          <img src="assets/img/logo.svg" alt="" width="28" height="28" />
+          <span class="brand-word">SISCOM</span><i class="brand-dot"></i>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Utama">
+          <span class="nav-ink" aria-hidden="true"></span>
+          <a href="#solusi">Solusi</a>
+          <a href="#hisis">HISIS</a>
+          <a href="#produk">Produk</a>
+          <a href="#klien">Klien</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn btn-a nav-cta" href="demo.html">
+            <span class="cta-full">Jadwalkan Demo</span
+            ><span class="cta-short">Demo</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Buka menu"
+            aria-expanded="false"
+            aria-controls="drawer"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-top">
+        <span class="drawer-label">Menu</span>
+        <button
+          class="burger close"
+          id="close"
+          type="button"
+          aria-label="Tutup menu"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav aria-label="Menu seluler">
+        <a href="#solusi">Solusi</a>
+        <a href="#hisis">HISIS</a>
+        <a href="#produk">Produk</a>
+        <a href="#proses">Implementasi</a>
+        <a href="#klien">Klien</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-a drawer-cta" href="demo.html"
+        >Jadwalkan Demo 30 Menit</a
+      >
+      <p class="drawer-note">
+        Konsultan SISCOM siap membantu, Senin–Jumat 09.00–17.00 WIB.
+      </p>
+    </div>
+
+    <main id="main">
+      <!-- 1. HERO (homebase ala SaaSez) -->
+      <section class="hero" id="hero">
+        <canvas id="scene" aria-hidden="true"></canvas>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <h1>
+              Stok, kas, dan laporan Anda memakai
+              <span class="grad-text">angka yang sama.</span>
+            </h1>
+            <p class="lead">
+              SISCOM menyatukan POS retail, gudang distribusi, HPP manufaktur,
+              RAB konstruksi, kawasan berikat, dan payroll dalam satu sistem
+              akuntansi untuk bisnis Indonesia. Dipercaya sejak 1994.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-a" href="demo.html">Jadwalkan Demo 30 Menit</a>
+              <a
+                class="btn btn-line"
+                data-wa="Halo Tim SISCOM, saya ingin diskusi kebutuhan ERP."
+                href="#"
+                >Chat WhatsApp</a
+              >
+            </div>
+            <div class="trust">
+              <div class="faces" aria-hidden="true">
+                <span>AR</span><span>DW</span><span>NS</span>
+              </div>
+              <div class="trust-item">
+                <b>1.000+</b><small>Perusahaan klien</small>
+              </div>
+              <div class="trust-sep" aria-hidden="true"></div>
+              <div class="trust-item rating">
+                <b
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="m12 3 2.7 5.9 6.3.8-4.6 4.4 1.2 6.4-5.6-3.1-5.6 3.1 1.2-6.4L3 9.7l6.3-.8Z"
+                    /></svg
+                  >4.8/5</b
+                ><small>10.000+ review</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stage">
+            <div class="dash" aria-label="Contoh tampilan dasbor">
+              <div class="dash-head">
+                <span class="dash-title"
+                  ><i class="live"></i>Bisnis Overview</span
+                >
+                <div class="sw" role="group" aria-label="Pilih cabang">
+                  <button type="button" aria-pressed="true" data-b="0">
+                    Pusat</button
+                  ><button type="button" aria-pressed="false" data-b="1">
+                    Surabaya
+                  </button>
+                </div>
+              </div>
+              <div class="kpis">
+                <div class="kpi">
+                  <small>Penjualan</small><b id="k0">Rp 842.650.000</b>
+                </div>
+                <div class="kpi">
+                  <small>Pembelian</small><b id="k1">Rp 418.200.000</b>
+                </div>
+                <div class="kpi">
+                  <small>Hutang</small><b id="k2">Rp 126.400.000</b>
+                </div>
+                <div class="kpi">
+                  <small>Piutang</small><b id="k3">Rp 294.850.000</b>
+                </div>
+              </div>
+              <svg class="spark" viewBox="0 0 308 74" aria-hidden="true">
+                <path
+                  id="spark"
+                  d="M4 64L54 52L104 56L154 38L204 42L254 24L304 14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="dash-foot">
+                <span>Arus kas 30 hari</span
+                ><span class="chip-ok">Real-time</span>
+              </div>
+
+              <div class="float-card" aria-hidden="true">
+                <p class="float-label">Modul aktif</p>
+                <ul>
+                  <li><i></i>Keuangan</li>
+                  <li><i></i>Akunting</li>
+                  <li><i></i>Persediaan</li>
+                  <li><i></i>Bantuan</li>
+                </ul>
+              </div>
+              <div class="float-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7" /></svg>
+                Jurnal tersinkron
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- stats -->
+      <div class="stats">
+        <div class="wrap stats-grid">
+          <div><b data-n="1994" data-plain>0</b><span>Tahun berdiri</span></div>
+          <div>
+            <b data-n="1000" data-suf="+">0</b><span>Perusahaan klien</span>
+          </div>
+          <div><b data-n="7">0</b><span>Suite produk siap pakai</span></div>
+          <div><b data-n="9">0</b><span>Modul ERP Konstruksi</span></div>
+        </div>
+      </div>
+
+      <!-- 2. SCROLL STORY ala Kivo -->
+      <section class="story" id="solusi" aria-label="Dari data ke keputusan">
+        <div class="story-sticky">
+          <div class="wrap story-grid">
+            <div class="story-copy">
+              <div class="story-slides">
+                <article class="story-slide is-active" data-step="0">
+                  <h2 class="big">
+                    Berhenti merekonsiliasi manual di
+                    <span class="muted">akhir bulan.</span>
+                  </h2>
+                  <p class="lead">
+                    Saat kasir, gudang, proyek, dan HR memakai aplikasi
+                    terpisah, pimpinan menunggu rekap Excel. SISCOM menyatukan
+                    data saat transaksi terjadi.
+                  </p>
+                  <ul class="story-list">
+                    <li>Data dari transaksi, bukan rekap susulan</li>
+                    <li>Stok, kas, dan piutang dalam satu basis data</li>
+                    <li>Laporan siap dibaca per cabang</li>
+                  </ul>
+                </article>
+
+                <article class="story-slide" data-step="1">
+                  <h2 class="big">
+                    Setiap transaksi langsung menjadi
+                    <span class="muted">jurnal.</span>
+                  </h2>
+                  <p class="lead">
+                    Transaksi barcode di kasir memperbarui saldo stok dan nilai
+                    persediaan seketika. Diskon, pajak, dan hak akses mengikuti
+                    aturan yang Anda tetapkan.
+                  </p>
+                  <ul class="story-list">
+                    <li>HPP dan landed cost dihitung otomatis</li>
+                    <li>Persetujuan berjenjang sesuai peran</li>
+                    <li>Jejak audit untuk setiap perubahan</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="story-foot">
+                <div class="story-rail" aria-hidden="true"><i></i></div>
+                <p class="story-count"><b>01</b><span>/ 02</span></p>
+              </div>
+            </div>
+
+            <div class="story-stage">
+              <div class="vis vis-a is-active" aria-hidden="true">
+                <div class="orbit-rings"><i></i><i></i><i></i></div>
+                <div class="orbit-stage">
+                  <div class="orbit-globe"><canvas id="orbA"></canvas></div>
+                  <svg
+                    class="orbit-lines"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <g class="orbit-path" data-i="0">
+                      <path d="M25 30 C19 22 16 15 6 10" />
+                      <circle cx="25" cy="30" r="0.65" />
+                    </g>
+                    <g class="orbit-path" data-i="1">
+                      <path d="M75 30 C83 25 89 19 94 16" />
+                      <circle cx="75" cy="30" r="0.65" />
+                    </g>
+                    <g class="orbit-path" data-i="2">
+                      <path d="M24 64 C17 69 12 75 5 79" />
+                      <circle cx="24" cy="64" r="0.65" />
+                    </g>
+                    <g class="orbit-path" data-i="3">
+                      <path d="M74 66 C82 72 88 78 95 82" />
+                      <circle cx="74" cy="66" r="0.65" />
+                    </g>
+                    <g class="orbit-path" data-i="4">
+                      <path d="M78 50 C85 51 90 52 95 53" />
+                      <circle cx="78" cy="50" r="0.65" />
+                    </g>
+                  </svg>
+                  <span class="orbit-chip c1">Kartu stok</span>
+                  <span class="orbit-chip c2">Landed cost</span>
+                  <span class="orbit-chip c3">Harga beli</span>
+                  <span class="orbit-chip c4">Kurva-S</span>
+                  <span class="orbit-chip c5">Payroll</span>
+                </div>
+              </div>
+
+              <div class="vis vis-b" aria-hidden="true">
+                <div class="sys-wrap">
+                  <div class="sys-sphere"><canvas id="orbB"></canvas></div>
+                  <svg
+                    class="sys-lines"
+                    viewBox="0 0 470 540"
+                    preserveAspectRatio="none"
+                  >
+                    <g class="sys-path" data-i="0">
+                      <path
+                        d="M208 246 C250 246 244 84 300 84"
+                        vector-effect="non-scaling-stroke"
+                      />
+                      <circle cx="208" cy="246" r="3" />
+                    </g>
+                    <g class="sys-path" data-i="1">
+                      <path
+                        d="M208 250 C258 250 252 162 300 162"
+                        vector-effect="non-scaling-stroke"
+                      />
+                      <circle cx="208" cy="250" r="3" />
+                    </g>
+                    <g class="sys-path" data-i="2">
+                      <path
+                        d="M208 254 C258 254 252 240 300 240"
+                        vector-effect="non-scaling-stroke"
+                      />
+                      <circle cx="208" cy="254" r="3" />
+                    </g>
+                    <g class="sys-path" data-i="3">
+                      <path
+                        d="M208 258 C258 258 252 318 300 318"
+                        vector-effect="non-scaling-stroke"
+                      />
+                      <circle cx="208" cy="258" r="3" />
+                    </g>
+                    <g class="sys-path" data-i="4">
+                      <path
+                        d="M208 262 C250 262 244 396 300 396"
+                        vector-effect="non-scaling-stroke"
+                      />
+                      <circle cx="208" cy="262" r="3" />
+                    </g>
+                    <g class="sys-path" data-i="5">
+                      <path
+                        d="M208 266 C250 266 244 474 300 474"
+                        vector-effect="non-scaling-stroke"
+                      />
+                      <circle cx="208" cy="266" r="3" />
+                    </g>
+                  </svg>
+                  <ul class="sys-list">
+                    <li class="sys-pill" data-i="0">
+                      <span>Kasir &amp; POS</span>
+                      <small class="sys-badge">Transaksi tersinkron</small>
+                    </li>
+                    <li class="sys-pill" data-i="1">
+                      <span>Gudang</span>
+                      <small class="sys-badge">Stok diperbarui</small>
+                    </li>
+                    <li class="sys-pill" data-i="2">
+                      <span>Akuntansi</span>
+                      <small class="sys-badge">Jurnal dibuat</small>
+                    </li>
+                    <li class="sys-pill" data-i="3">
+                      <span>Payroll</span>
+                      <small class="sys-badge">Slip gaji siap</small>
+                    </li>
+                    <li class="sys-pill" data-i="4">
+                      <span>Proyek</span>
+                      <small class="sys-badge">Progres tersinkron</small>
+                    </li>
+                    <li class="sys-pill" data-i="5">
+                      <span>Pajak</span>
+                      <small class="sys-badge">Faktur pajak terbit</small>
+                    </li>
+                  </ul>
+                  <p class="sys-caption">
+                    <b>Gudang</b><span> · Stok diperbarui</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. HISIS ala "Agents Built for How People Really Need" -->
+      <section class="hisis" id="hisis">
+        <div class="wrap">
+          <div class="sec-head center">
+            <h2 class="grad-title">
+              HISIS by SISCOM<br />untuk Produktivitas Maksimal.
+            </h2>
+            <p class="lead center">
+              HISIS membaca data operasional SISCOM, memberi peringatan tepat
+              waktu, dan membantu tim menyelesaikan pekerjaan lintas fungsi.
+            </p>
+          </div>
+
+          <div class="agents-stage">
+            <div class="agents-orb">
+              <div class="bot-dome" aria-hidden="true">
+                <div class="bot-rings"><i></i><i></i></div>
+                <span class="portal-pod l"></span
+                ><span class="portal-pod r"></span>
+                <div class="mascot-fly">
+                  <img class="mascot-img" src="maskot.png" alt="" />
+                </div>
+                <div class="mascot-stage">
+                  <span class="mascot-stage-glow"></span>
+                  <span class="mascot-stage-base"></span>
+                </div>
+              </div>
+              <div class="agent-prompt">
+                <p>
+                  <span class="prompt-text"
+                    >Ringkas performa cabang minggu ini</span
+                  ><span class="caret" aria-hidden="true"></span>
+                </p>
+                <div class="prompt-tools" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m20 20-3.5-3.5" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 4v10M8 8v6M16 8v6M4 11v2M20 11v2" />
+                  </svg>
+                  <span class="prompt-send">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 19V5M6 11l6-6 6 6" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <span class="agent-chip ok"><i></i>Insight siap</span>
+            </div>
+
+            <div class="agent-cards" id="agentCards">
+              <article class="agent-card is-on" data-card="0">
+                <div class="agent-ico">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M4 15a4 4 0 0 0 4 4h8a4 4 0 0 0 .6-8A5.5 5.5 0 0 0 6 9.5 4 4 0 0 0 4 15Z"
+                    />
+                    <path d="M9 14l2 2 4-4" />
+                  </svg>
+                </div>
+                <h3>Percepat Proses Bisnis</h3>
+                <p>
+                  Ubah data yang kompleks menjadi insight yang jelas dan cepat,
+                  langsung ditindaklanjuti untuk meningkatkan performa.
+                </p>
+              </article>
+              <article class="agent-card" data-card="1">
+                <div class="agent-ico">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8" />
+                    <path d="M10 20a2 2 0 0 0 4 0" />
+                  </svg>
+                </div>
+                <h3>Notifikasi untuk Tugas Penting</h3>
+                <p>
+                  HISIS memastikan tidak ada yang terlewat melalui pengingat
+                  cerdas, notifikasi real-time, serta pelacakan alur kerja yang
+                  terintegrasi.
+                </p>
+              </article>
+              <article class="agent-card" data-card="2">
+                <div class="agent-ico">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 19V9M10 19V5M16 19v-7M22 19H2" />
+                  </svg>
+                </div>
+                <h3>Asisten Analisis Pribadi Anda</h3>
+                <p>
+                  HISIS menyediakan data selama 24/7 dan memberikan insight,
+                  prediksi, serta rekomendasi untuk mendukung pengambilan
+                  keputusan yang lebih cerdas.
+                </p>
+              </article>
+              <article class="agent-card" data-card="3">
+                <div class="agent-ico">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3" />
+                    <path
+                      d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"
+                    />
+                  </svg>
+                </div>
+                <h3>Asisten Multi-Fungsi</h3>
+                <p>
+                  Sebagai asisten cerdas, HISIS membantu mengoptimalkan workflow
+                  dan secara proaktif menyelesaikan berbagai permasalahan di
+                  seluruh fungsi bisnis.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. PRODUK ala "Purpose-Built for the Complexity of Your Domain" -->
+      <section class="domains" id="produk">
+        <div class="dom-stage">
+          <div class="dom-bgs" aria-hidden="true">
+            <span class="dom-bg on"></span><span class="dom-bg"></span>
+            <span class="dom-bg"></span><span class="dom-bg"></span>
+          </div>
+          <canvas id="fieldC" class="field-c" aria-hidden="true"></canvas>
+          <div class="wrap dom-inner">
+            <div class="dom-intro">
+              <div class="sec-head center">
+                <h2 class="grad-title">
+                  Pilih suite yang dibuat<br />untuk model bisnis Anda.
+                </h2>
+                <p class="lead center">
+                  Setiap industri punya aturan main berbeda. Pilih kategori
+                  untuk melihat cakupan modulnya.
+                </p>
+              </div>
+
+              <div class="dom-field">
+                <div class="dom-globe"><canvas id="globeC"></canvas></div>
+                <div class="domain-pills" id="domainPills"></div>
+              </div>
+
+              <p class="dom-hint">Gulir untuk melihat tiap suite</p>
+            </div>
+
+            <div class="dom-show" id="domShow" aria-live="polite">
+              <article class="dom-card">
+                <div class="dom-card-top">
+                  <span class="dom-tag" id="domTag">Retail</span>
+                  <span class="dom-count" id="domCount">01 / 07</span>
+                </div>
+                <h3 id="domName">SIS SmartPOS</h3>
+                <p class="dom-head" id="domHead">
+                  Retail: Dari Niat Beli Sampai Transaksi Selesai
+                </p>
+                <div class="dom-ball" aria-hidden="true"></div>
+                <p class="dom-desc" id="domDesc"></p>
+                <p class="dom-out">OUTCOME</p>
+                <p class="dom-out-text" id="domOutcome"></p>
+                <a class="btn btn-a dom-cta" href="demo.html">Jadwalkan demo</a>
+              </article>
+              <div class="dom-panels-wrap">
+                <div class="dom-panels" id="domPanels"></div>
+                <button
+                  class="dom-scroll-btn prev"
+                  type="button"
+                  aria-label="Geser kartu ke kiri"
+                >
+                  ‹
+                </button>
+                <button
+                  class="dom-scroll-btn next"
+                  type="button"
+                  aria-label="Geser kartu ke kanan"
+                >
+                  ›
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- implementasi -->
+      <section class="process" id="proses">
+        <div class="wrap">
+          <div class="sec-head rv">
+            <h2>Bertahap sampai tim Anda mandiri.</h2>
+            <p class="lead">
+              Konsultan SISCOM mendampingi dari persiapan data hingga pelatihan
+              onsite.
+            </p>
+          </div>
+          <ol class="tl rv">
+            <li>
+              <span>01</span>
+              <h3>Analisa kebutuhan</h3>
+              <p>Pemetaan SOP dan struktur cabang.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>Setup &amp; hak akses</h3>
+              <p>Instalasi Cloud atau Desktop dan otorisasi peran.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>Migrasi data</h3>
+              <p>Impor master dan saldo awal dari Excel.</p>
+            </li>
+            <li>
+              <span>04</span>
+              <h3>Onsite training</h3>
+              <p>Pelatihan tim keuangan, gudang, dan kasir.</p>
+            </li>
+            <li>
+              <span>05</span>
+              <h3>Go-live &amp; MSC</h3>
+              <p>Pendampingan dan kontrak pemeliharaan.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- sejarah perusahaan -->
+      <section class="history" id="sejarah">
+        <div class="wrap">
+          <div class="sec-head center rv">
+            <p class="eyebrow"><i></i>Perjalanan Kami</p>
+            <h2>Timeline <span class="grad-text">History</span></h2>
+            <p class="lead center">
+              Dari kantor kecil pada 1994 menjadi platform ERP yang dipercaya
+              ribuan bisnis Indonesia.
+            </p>
+          </div>
+
+          <div class="history-arc rv">
+            <div class="hist-progress" aria-hidden="true">
+              <b id="histStep">01</b> / 11
+            </div>
+            <button class="hist-arrow prev" type="button" aria-label="Tahun sebelumnya">‹</button>
+            <button class="hist-arrow next" type="button" aria-label="Tahun berikutnya">›</button>
+            <div class="hist-arc-row">
+              <div class="hist-row row-1">
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><path d="M4 9h16v10H4zM9 9V6h6v3M4 13h16" /></svg>
+                </span>
+                <b class="hist-year">1994</b>
+                <p class="hist-desc">Seedstage pendirian perusahaan</p>
+              </article>
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><path d="M4 21V6l8-3 8 3v15M8 10h1M15 10h1M8 14h1M15 14h1M10 21v-4h4v4" /></svg>
+                </span>
+                <b class="hist-year">1999</b>
+                <p class="hist-desc">100 tenant di Gedung AIF Tower Jakarta, SISCOM Desktop/On-Premise</p>
+              </article>
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" /><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8" /></svg>
+                </span>
+                <b class="hist-year">2009</b>
+                <p class="hist-desc">Mulai menggunakan E-Business Suite</p>
+              </article>
+            </div>
+
+            <div class="hist-row row-2">
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" /></svg>
+                </span>
+                <b class="hist-year">2013</b>
+                <p class="hist-desc">Membangun aplikasi mobile pertama</p>
+              </article>
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><path d="M6 18a4 4 0 0 1 .5-8A5.5 5.5 0 0 1 17 9a4.5 4.5 0 0 1-.5 9H6Z" /></svg>
+                </span>
+                <b class="hist-year">2018</b>
+                <p class="hist-desc">SISCOM ecosystem: reformasi struktural ke cloud</p>
+              </article>
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M10 18h4" /></svg>
+                </span>
+                <b class="hist-year">2019</b>
+                <p class="hist-desc">SISCOM merilis aplikasi mobile apps</p>
+              </article>
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M9 6h6M10 18h4" /></svg>
+                </span>
+                <b class="hist-year">2020</b>
+                <p class="hist-desc">Mobile apps dengan fitur-fitur baru</p>
+              </article>
+            </div>
+
+            <div class="hist-row row-3">
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8" /><path d="M15 7h6v6" /></svg>
+                </span>
+                <b class="hist-year">2021</b>
+                <p class="hist-desc">Mobile information system untuk tim sales</p>
+              </article>
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3" /><path d="M3 20a6 6 0 0 1 12 0M17 8h4M19 6v4" /></svg>
+                </span>
+                <b class="hist-year">2022</b>
+                <p class="hist-desc">Meluncurkan software HRIS — SISCOM Integrated SDM</p>
+              </article>
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" /></svg>
+                </span>
+                <b class="hist-year">2023</b>
+                <p class="hist-desc">SISCOPE ERP: Islamic banking &amp; multi deposito</p>
+              </article>
+              <article class="hist-item">
+                <span class="hist-node">
+                  <svg viewBox="0 0 24 24"><path d="M12 2c3 3 5 6 5 10a5 5 0 0 1-10 0c0-4 2-7 5-10Z" /><path d="M12 21c-2-2-3-4-3-6a3 3 0 0 1 6 0c0 2-1 4-3 6Z" /></svg>
+                </span>
+                <b class="hist-year">2026</b>
+                <p class="hist-desc">Mengembangkan E-Bizzy untuk masa depan bisnis Indonesia</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- keamanan -->
+      <section class="secure" id="keamanan">
+        <div class="wrap">
+          <div class="sec-head rv">
+            <h2>Akses terkontrol, dukungan jelas penanggung jawabnya.</h2>
+          </div>
+          <div class="sec-grid">
+            <div>
+              <h3>Hak akses berbasis peran</h3>
+              <p>
+                Atur siapa yang boleh melihat harga beli, menyetujui diskon,
+                atau membuka laba rugi, lengkap dengan log aktivitas.
+              </p>
+            </div>
+            <div>
+              <h3>Google Cloud atau On-Premise</h3>
+              <p>
+                Akses web multi-lokasi lewat SISCOM Online, atau instal di
+                jaringan lokal kantor.
+              </p>
+            </div>
+            <div>
+              <h3>JOT, MSC &amp; helpdesk</h3>
+              <p>
+                Jasa Onsite Training, Maintenance Service Contract, dan Alokasi
+                Data Server. ISI: SLA respons bila dipublikasikan.
+              </p>
+            </div>
+            <div>
+              <h3>Perlindungan akun</h3>
+              <p>
+                Tim resmi SISCOM tidak pernah meminta kata sandi atau kode OTP
+                Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- klien -->
+      <section class="clients" id="klien">
+        <div class="wrap">
+          <div class="sec-head center rv">
+            <h2>Lebih dari 1.000 perusahaan mempercayakan operasionalnya.</h2>
+            <p class="lead center">
+              Contoh klien tercatat di siscom.co.id. ISI: ganti dengan logo
+              resmi setelah izin tayang.
+            </p>
+          </div>
+          <div class="client-grid rv">
+            <div>Hwaseung</div>
+            <div>Indoprima</div>
+            <div>Denka</div>
+            <div>Kawata</div>
+            <div>Bakpau A Satu</div>
+            <div>Bio Herbal</div>
+            <div>Aneka Logam</div>
+            <div>Beyond Tech</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-sec" id="faq">
+        <div class="wrap faq-grid">
+          <div class="sec-head rv">
+            <h2>Pertanyaan sebelum demo.</h2>
+            <p class="lead">
+              Belum menemukan jawabannya? Tanyakan langsung ke konsultan kami.
+            </p>
+            <a class="btn btn-line" href="demo.html">Tanya konsultan</a>
+          </div>
+          <div class="faq rv">
+            <details open>
+              <summary>
+                Apakah data dari Excel atau software lama bisa dimigrasi?
+              </summary>
+              <p>
+                Bisa. Master barang, pelanggan, pemasok, bagan akun, dan saldo
+                awal dapat diimpor dari Excel.
+              </p>
+            </details>
+            <details>
+              <summary>Apakah ERP bisa dicustom sesuai SOP kami?</summary>
+              <p>
+                Bisa. SISCOM melayani custom dan modifikasi fitur, alur
+                persetujuan, dan format laporan.
+              </p>
+            </details>
+            <details>
+              <summary>SISCOM Online atau Desktop On-Premise?</summary>
+              <p>
+                Online (Google Cloud) cocok untuk banyak cabang. On-Premise
+                cocok bila data wajib tersimpan di server kantor.
+              </p>
+            </details>
+            <details>
+              <summary>Berapa lama implementasi?</summary>
+              <p>
+                Bergantung pada jumlah modul, kesiapan data, dan kustomisasi.
+                Estimasi disusun pada sesi demo. ISI: rentang resmi.
+              </p>
+            </details>
+            <details>
+              <summary>Bagaimana jika tim masih awam pembukuan?</summary>
+              <p>
+                Tersedia Jasa Onsite Training dan Jasa Akunting untuk merapikan
+                pembukuan dan saldo awal.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer ala Kivo -->
+    <footer class="foot">
+      <div class="wrap">
+        <div class="foot-hero">
+          <canvas class="foot-lines" id="footLines" aria-hidden="true"></canvas>
+          <div>
+            <p class="foot-mark">SISCOM <span>×</span> ERP</p>
+            <h2>Jadikan SISCOM bagian dari cara bisnis Anda beroperasi.</h2>
+            <p class="lead">
+              Tim Anda ingin pekerjaan selesai, bukan alat lain yang terputus.
+              SISCOM menghubungkan penjualan, persediaan, proyek, dan SDM dalam
+              satu sistem yang sudah dipercaya sejak 1994.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-a" href="demo.html">Jadwalkan Demo</a>
+              <a
+                class="btn btn-line"
+                data-wa="Halo Tim SISCOM, saya ingin diskusi kebutuhan ERP."
+                href="#"
+                >Chat WhatsApp</a
+              >
+            </div>
+          </div>
+          <ol class="foot-steps">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Analisa kebutuhan</h3>
+                <p>Pemetaan SOP dan struktur cabang.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Setup &amp; migrasi</h3>
+                <p>Instalasi, hak akses, dan impor data awal.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Go-live &amp; dampingan</h3>
+                <p>Pelatihan onsite dan kontrak pemeliharaan.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <a class="brand" href="#hero" aria-label="SISCOM ERP">
+              <img src="assets/img/logo.svg" alt="" width="28" height="28" />
+              <span class="brand-word">SISCOM</span><i class="brand-dot"></i>
+            </a>
+            <p>
+              Software ERP &amp; HRIS Indonesia.<br />PT Shan Informasi Sistem,
+              sejak 1994.
+            </p>
+            <div class="social">
+              <a
+                href="https://www.instagram.com/siscomsoftware/"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+              <a
+                href="https://id.linkedin.com/company/pt-shan-informasi-sistem"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4>Produk</h4>
+            <a href="#produk">Retail &amp; POS</a>
+            <a href="#produk">Distribusi</a>
+            <a href="#produk">Manufaktur</a>
+            <a href="#produk">Konstruksi</a>
+            <a href="#produk">Kawasan Berikat</a>
+            <a href="#produk">Money Changer</a>
+            <a href="#produk">HRIS</a>
+          </div>
+          <div>
+            <h4>Perusahaan</h4>
+            <a href="#hisis">HISIS</a>
+            <a href="#proses">Implementasi</a>
+            <a href="#klien">Klien</a>
+            <a href="#faq">FAQ</a>
+            <a href="https://siscom.co.id/kebijakan-privasi"
+              >Kebijakan Privasi</a
+            >
+          </div>
+          <div>
+            <h4>Kontak</h4>
+            <address>
+              City Resort Rukan Malibu Blok J No. 75-77, Mutiara Taman Palem,
+              Cengkareng Timur, Jakarta Barat 11730
+            </address>
+            <a href="mailto:cs@siscom.co.id">cs@siscom.co.id</a>
+            <a href="tel:+622156945002">+62 21 5694 5002</a>
+          </div>
+        </div>
+
+        <div class="foot-bottom">
+          <span
+            >&copy; <span id="year">2026</span> PT Shan Informasi Sistem. All
+            rights reserved.</span
+          >
+          <span>Dibuat untuk bisnis Indonesia.</span>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="wa"
+      id="wa"
+      data-wa="Halo Tim SISCOM, saya ingin bertanya tentang SISCOM ERP."
+      href="#"
+      aria-label="Chat WhatsApp"
+      ><svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-3.8-.9L3 21l1.9-5.6a8.4 8.4 0 1 1 16.1-3.9Z"
+        />
+        <path
+          d="M8.5 9.5c.4 2.7 2.3 4.6 5 5l1.2-1.7 1.8.9c-.4 1.4-1.7 2.2-3.1 1.9-3.4-.7-5.8-3.1-6.5-6.5-.3-1.4.5-2.7 1.9-3.1l.9 1.8Z"
+        /></svg
+      ><span>Chat WhatsApp</span></a
+    >
+  </body>
+</html>
